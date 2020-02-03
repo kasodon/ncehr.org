@@ -6,6 +6,10 @@ app.use(express.static('public'));
 const http = require('http');
 const port = process.env.PORT || 3000
 
+const server = http.createServer((req, res) => {
+  
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
@@ -27,6 +31,8 @@ app.use("/",router);
 
 app.use("*",function(req,res){
   res.sendFile(path + "404.html");
+});
+
 });
 
 server.listen(port,() => {
