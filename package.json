@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +13,7 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  },
+  "devDependencies": {},
   "engines": {
     "node": "12.13.1"
   }
