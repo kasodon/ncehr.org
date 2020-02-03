@@ -3,6 +3,8 @@ var app = express();
 var router = express.Router();
 var path = __dirname + '/public/';
 app.use(express.static('public'));
+const http = require('http');
+const port = process.env.PORT || 3000
 
 
 router.get("/",function(req,res){
@@ -27,6 +29,6 @@ app.use("*",function(req,res){
   res.sendFile(path + "404.html");
 });
 
-app.listen(3000,function(){
-  console.log("Live at Port 3000");
+server.listen(port,() => {
+  console.log(`Server running at port `+port);
 });
