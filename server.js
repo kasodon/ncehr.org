@@ -1,15 +1,13 @@
+const http = require('http');
+const port = process.env.PORT || 3000
 var express = require("express");
 var app = express();
 var router = express.Router();
 var path = __dirname + '/public/';
 app.use(express.static('public'));
-const http = require('http');
-const port = process.env.PORT || 3000
+
 
 const server = http.createServer((req, res) => {
-  
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
 
 router.get("/",function(req,res){
   res.sendFile(path + "index.html");
