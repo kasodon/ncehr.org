@@ -1,19 +1,22 @@
 {
-  "name": "version-1",
+  "name": "ncehr.org",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/kasodon/ncehr.org"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/kasodon/ncehr.org",
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {},
   "engines": {
     "node": "12.13.1"
   }
