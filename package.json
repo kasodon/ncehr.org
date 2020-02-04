@@ -2,9 +2,13 @@
   "name": "ncehr.org",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "12.x"
+  },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -15,9 +19,6 @@
   "license": "ISC",
   "homepage": "https://github.com/kasodon/ncehr.org",
   "dependencies": {
-    "express": "^4.17.1"
-  },
-  "engines": {
-    "node": "12.13.1"
+    "express": "^4.15.2"
   }
 }
