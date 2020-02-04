@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://https://github.com/kasodon/ncehr.org"
+    "url": "https://git.heroku.com/morning-sea-88753.git"
   },
   "keywords": [
     "node",
@@ -21,7 +21,7 @@
   ],
   "author": "edewor onyedika",
   "license": "ISC",
-  "homepage": "https://github.com/kasodon/ncehr.org",
+  "homepage": "https://morning-sea-88753.herokuapp.com/",
   "dependencies": {
     "express": "^4.15.2"
   }
