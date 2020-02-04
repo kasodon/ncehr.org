@@ -1,3 +1,4 @@
+/*
 const http = require('http');
 const port = process.env.PORT || 5000;
 var express = require("express");
@@ -39,3 +40,16 @@ app.use("*",function(req,res){
 server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
+*/
+
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
+
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('public', path.join(__dirname, 'public'))
+  .get('/', (req, res) => res.render('public/index'))
+  .get('/about', (req, res) => res.render('public/about'))
+  .get('/individual', (req, res) => res.render('public/individual'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
