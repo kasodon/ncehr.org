@@ -14,8 +14,12 @@
     "type": "git",
     "url": "https://https://github.com/kasodon/ncehr.org"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "edewor onyedika",
   "license": "ISC",
   "homepage": "https://github.com/kasodon/ncehr.org",
   "dependencies": {
