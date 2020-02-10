@@ -2119,13 +2119,14 @@ a.btn-custom-reverse.btn-lg {
 
 @media only screen and (max-width: 768px) {
     .about-description {
-        padding: 500px 0 100px 0;
+        padding: 300px 0 100px 0;
     }
   }
 
 .about-desc-content p {
     font-size: 20px;
     line-height: 28px;
+    justify-content: center;
 }
 
 /* 21.2. COUNTER */
@@ -2497,7 +2498,7 @@ a.btn-custom-reverse.btn-lg {
 \*------------------------------------*/
 /* 23.1. CONTACT FORM */
 #contact {
-    padding: 80px 0;
+    padding: 350px 0 100px 0;
     position: relative;
 }
 #contact:before {
@@ -3201,44 +3202,15 @@ a.comment-reply:focus {
 .kpx_btn-twitter:focus {background: #fff; color:#56803a; border-color: #56803a;}
 
 
-.bs-calltoaction{
-    position: relative;
-    width:auto;
-    padding: 15px 25px;
-    border: 1px solid black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-    .bs-calltoaction > .row{
-        display:table;
-        width: calc(100% + 30px);
-    }
-     
-        .bs-calltoaction > .row > [class^="col-"],
-        .bs-calltoaction > .row > [class*=" col-"]{
-            float:none;
-            display:table-cell;
-            vertical-align:middle;
-        }
-
             .cta-contents{
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
 
                 .cta-title{
-                    margin: 0 auto 15px;
-                    padding: 0;
-                }
-
-                .cta-desc{
-                    padding: 0;
-                }
-
-                .cta-desc p:last-child{
-                    margin-bottom: 0;
+                    margin: 10px;
+                   color: #fff;
+                   font-size: 18px;
                 }
 
             .cta-button{
@@ -3247,18 +3219,6 @@ a.comment-reply:focus {
             }
 
 @media (max-width: 991px){
-    .bs-calltoaction > .row{
-        display:block;
-        width: auto;
-    }
-
-        .bs-calltoaction > .row > [class^="col-"],
-        .bs-calltoaction > .row > [class*=" col-"]{
-            float:none;
-            display:block;
-            vertical-align:middle;
-            position: relative;
-        }
 
         .cta-contents{
             text-align: center;
@@ -3267,19 +3227,7 @@ a.comment-reply:focus {
 
 
 
-.bs-calltoaction.bs-calltoaction-default{
-    color: #333;
-    background-color: #fff;
-}
-
-.bs-calltoaction.bs-calltoaction-primary{
-    color: #fff;
-    background-color: #b1824f;
-}
-
-
-
-.bs-calltoaction.bs-calltoaction-primary .cta-button .btn{
+.cta-button .btn{
     background-color: #56803a;
     border-color: #56803a;
 }
@@ -3297,4 +3245,9 @@ a.comment-reply:focus {
 }
 .panel-body{
     display: none;
+}
+
+#volunteer{
+    width: 100%;
+    background-color: #b1824f;
 }

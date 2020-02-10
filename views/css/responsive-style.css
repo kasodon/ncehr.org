@@ -48,10 +48,12 @@ Author : themelooks.com
     /* MENU AREA */
     .primary--logo {
         float: none;
-        margin-bottom: 30px;
+        margin-left: 100px;
+        
         text-align: center;
     }
     .primary--info {
+        display: none;
         float: none;
         text-align: center;
     }
@@ -148,7 +150,7 @@ Author : themelooks.com
         margin-top: 50px;
     }
     .single-feature--image img.img-responsive {
-        margin: 0;
+        
     }
     
     #pricing {
@@ -198,7 +200,7 @@ Author : themelooks.com
       border: 0;
     }
     #compare table thead {
-      display: none;
+     
     }
     #compare table tr {
       margin-bottom: 10px;

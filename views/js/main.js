@@ -341,7 +341,7 @@ Author : themelooks.com
         var map, marker, myLatLng;
         
         function initMap() {
-            myLatLng = {lat: 23.790546, lng: 90.375583};
+            myLatLng = {lat: 5.76816395, lng: 6.834304875953444};
             
             map = new google.maps.Map(document.getElementById('map'), {
                 center: myLatLng,
@@ -367,49 +367,11 @@ Author : themelooks.com
             initMap();
         }
         
-        function initMap2() {
-            var locations = [
-                ['Hanota Sagar', 23.737385, 78.757671, 4],
-                ['গুলশান, ঢাকা', 23.789747, 90.3929248, 5],
-                ['Gannan, Gansu, China', 34.9862056, 102.8388954, 3],
-                ['মুম্বই, মহারাষ্ট্র, India', 19.0825223, 72.7411178, 2],
-                ['Mahaoya, Sri Lanka', 7.8784551, 81.2146297, 4]
-            ];
-            
-            map = new google.maps.Map(document.getElementById('map2'), {
-                center: new google.maps.LatLng(20.9124975, 73.7479053),
-                zoom: 5,
-                scrollwheel: false,
-                disableDefaultUI: true,
-                zoomControl: true
-            });
-
-            var marker, i;
-
-            for (i = 0; i < locations.length; i++) {
-                marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                        map: map
-                });
-            }
-            
-            if ( wn.width() < 767 ) {
-                map.setOptions({draggable: false});
-            }
-        }
-        
-        if ( $("#map2").length ) {
-            initMap2();
-        }
+     
         
         /* -------------------------------------------------------------------------*
          * PRICING TABLE LABEL
          * -------------------------------------------------------------------------*/
-        if ( wn.width() < 992 ) {
-            $('#compare table td, #pricingTable2 table td').each(function () {
-                $(this).prepend('<span class="labelText">'+ $(this).data('label') + '</span>');
-            });
-        }
         
         /* ------------------------------------------------------------------------- *
          * TWITTER WIDGET

@@ -59,6 +59,9 @@ express()
   .get('/', (req, res) => res.render('index'))
   .get('/about', (req, res) => res.render('about'))
   .get('/individual', (req, res) => res.render('individual'))
+  .get('/institution', (req, res) => res.render('institution'))
+  .get('/steering', (req, res) => res.render('steering'))
+  .get('/contact', (req, res) => res.render('contact'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
