@@ -195,12 +195,16 @@ Author : themelooks.com
     #features hr {
         display: none;
     }
+
+    #compare {
+        padding: 300px 0 100px 0;
+    }
     
     #compare table {
       border: 0;
     }
     #compare table thead {
-     
+        display: none;
     }
     #compare table tr {
       margin-bottom: 10px;
@@ -209,7 +213,7 @@ Author : themelooks.com
     }
     #compare table td {
       display: block;
-      text-align: right;
+      text-align: center;
       font-size: 13px;
       border-bottom: 1px dotted #ccc;
     }
@@ -331,7 +335,10 @@ Author : themelooks.com
     }
     
     .primary--logo {
-        text-align: left;
+        float: none;
+        margin-left: 25px;
+        
+        text-align: center;
     }
     #primaryMenu.primary-menu-two .primary--logo h1 {
         margin: 0;
@@ -405,6 +412,11 @@ Author : themelooks.com
     .secondary-menu-links > .dropdown.open > .dropdown-menu > li > a:focus {
         color: #303030;
         background-color: #fff;
+    }
+
+    .header-item-content h2 {
+        font-size: 20px;
+        line-height: 24px;
     }
     
     /* OFFER AERA */
