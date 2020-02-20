@@ -50,9 +50,12 @@ server.listen(port,() => {
 const express = require('express');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 
 express()
   .use(express.static(path.join(__dirname, 'views')))
+  .use(bodyParser.urlencoded({extended: true}))
   .set('views', path.join(__dirname, 'views'))
   .engine('html', require('ejs').renderFile)
   .set('view engine', 'html')
@@ -63,5 +66,36 @@ express()
   .get('/steering', (req, res) => res.render('steering'))
   .get('/contact', (req, res) => res.render('contact'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  .post('/contact', (req, res) => {
+
+    // Instantiate the SMTP server
+    const smtpTrans = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: GMAIL_USER,
+        pass: GMAIL_PASS
+      }
+    })
+  
+    // Specify what the email will look like
+    const mailOpts = {
+      from: 'Your sender info here', // This is ignored by Gmail
+      to: GMAIL_USER,
+      subject: 'New message from contact form at tylerkrys.ca',
+      text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    }
+  
+    // Attempt to send the email
+    smtpTrans.sendMail(mailOpts, (error, response) => {
+      if (error) {
+        res.render('contact-failure') // Show a page indicating failure
+      }
+      else {
+        res.render('contact-success') // Show a page indicating success
+      }
+    })
+  })
 
 
