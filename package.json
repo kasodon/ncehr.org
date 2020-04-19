@@ -23,6 +23,7 @@
   "license": "ISC",
   "homepage": "https://morning-sea-88753.herokuapp.com/",
   "dependencies": {
+    "axios": "^0.19.2",
     "ejs": "^3.0.1",
     "express": "^4.15.2",
     "nodemailer": "^6.4.3",

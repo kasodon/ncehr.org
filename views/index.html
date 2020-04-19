@@ -16,10 +16,11 @@
     
     
     <!-- ====Google Font Stylesheet==== -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
 
     <!-- ====Font Awesome Stylesheet==== -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- ====jQuery UI Stylesheet==== -->
     <link href="css/jquery-ui-custom.min.css" rel="stylesheet">
@@ -38,9 +39,20 @@
     
     <!-- ====Responsive Stylesheet==== -->
     <link href="css/responsive-style.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.min.css" rel="stylesheet">
+    <link href="venobox/venobox.css" rel="stylesheet">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     
     <!-- ====Color Scheme Stylesheet==== -->
     <link href="css/colors/theme-color-1.css" rel="stylesheet" id="changeColorScheme">
+
+     <!-- ====fancybox Stylesheet==== -->
+     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,13 +69,13 @@
             <div class="container">
                 <!-- Logo Start -->
                 <div class="primary--logo">
-                    <img src="img/main.png" alt="site logo" />
+                    <a href="https://ncehr.org"><img src="img/main.png" alt="site logo" /></a>
                 </div>
                 <!-- Logo End -->
                 <div class="primary--info clearfix">
                     <ul class="nav navbar-nav social-contact">
-                        <li><a href="tel:+2348106834610"><i class="fa fa-phone fa-lg"></i><h4> <strong>+234 813 683 2345</strong></h4></a></li>
-                        <li><a href="mailto:enquiry@ncehr.org"><i class="fa fa-envelope fa-lg"></i><h4> <strong>enquiry@ncehr.org</strong></h4></a></li>
+                        <li style="font-family: 'Roboto', sans-serif;"><a href="tel:+2348106834610"><i class="fa fa-phone fa-lg"><strong>  +234 813 683 2345</strong></i></a></li>
+                        <li style="font-family: 'Roboto', sans-serif;"><a href="mailto:enquiry@ncehr.org"><i class="fa fa-envelope fa-lg">  <strong>enquiry@ncehr.org</strong></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -74,7 +86,7 @@
         <nav id="secondaryMenu" class="navbar">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#secondaryNavbar" aria-expanded="false" aria-controls="secondaryNavbar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#secondaryNavbar" aria-expanded="true" aria-controls="secondaryNavbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -162,6 +174,30 @@
        
     </div>
     <!-- Header Area End -->
+
+    <div id="covid-19">
+        <div class="container">
+            <div class="section-title">
+                <h2>COVID-19 Global Live Updates by Johns Hopkins CSSE <img src="img/viruses-solid.svg" style="width:60px;height:48px;"> </h2>
+            </div>
+            <div class="row text-center">
+                
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <p><img src="img/virus-solid.svg" style="width:40px;height:32px;"> Confirmed: <span id="confirmed"></span></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <p><img src="img/virus-slash-solid.svg" style="width:40px;height:32px;"> Recovered: <span id="recovered"></span></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <p><img src="img/hospital-user-solid.svg" style="width:40px;height:32px;"> Active: <span id="activee"></span></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <p><img src="img/ambulance-solid.svg" style="width:40px;height:32px;"> Deaths: <span id="deaths"></span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
     
     
     <!-- Single Features Area Start -->
@@ -170,18 +206,19 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-7 single-feature--content">
-                        <h2>A Community of researchers seeking to make a change in the eco-social environment</h2>
+                        <h3>NCEHR is a Nigerian based inter-disciplinary and inter university collaboration that monitors the link between health and climate change through vaious indicators that highlights the threats to health, and proffering solutions with community members as co-partners, co-learners, and co-owners of knowledge produced from the group.</h3>
                         
-                        <a href="#" class="btn btn-custom-reverse">Read More</a>
+                        <a href="#" class="btn btn-custom-reverse">Learn More</a>
                     </div>
                     <div class="col-md-5 single-feature--image text-center">
-                        <img src="img/research.png" alt="" class="img-responsive">
+                        <img src="img/WhatsApp1.jpeg" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Single Features Area End -->
+
 
 
      <!-- History Area Start -->
@@ -317,19 +354,179 @@
 
 
 
+<!-- Image Gallery section -->
+<div class="container-fluid">
+	<div class="row no-gutters">
+        <div class="section-title">
+            <h2>Events & Meetings in Photos</h2>
+        </div>
+		<div class='list-group gallery'>
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp1.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp1.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp2.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp2.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp3.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp3.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp4.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp4.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp5.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp5.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp6.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp6.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp7.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp7.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp8.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp8.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp9.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp9.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp10.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp10.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp11.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp11.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-6 col-xs-12 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="img/WhatsApp12.jpeg">
+                    <img class="img-responsive" alt="" src="img/WhatsApp12.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+        </div> <!-- list-group / end -->
+	</div> <!-- row / end -->
+</div> <!-- container / end -->
+
+
+
+<!-- details card section starts from here -->
+<section class="details-card">
+    <div class="container">
+        <div class="row">
+            <h2 style="color:#56803a;text-align:center;text-transform:uppercase;font-weight:700;margin-bottom: 50px;margin-top: -60px;">Recents Publications and Resources</h2>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img id="blog-img-one" src="" alt="">
+                        
+                    </div>
+                    <div class="card-desc">
+                        <h3 id="blog-title-one"></h3>
+                        <p id="blog-excerpt-one"></p>
+                            <a href="" id="blog-link-one" class="btn-card">Read More</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img id="blog-img-two" src="" alt="">
+                        
+                    </div>
+                    <div class="card-desc">
+                        <h3 id="blog-title-two"></h3>
+                        <p id="blog-excerpt-two"></p>
+                            <a href="" id="blog-link-two" class="btn-card">Read More</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-content">
+                    <div class="card-img">
+                        <img id="blog-img-three" src="" alt="">
+                       
+                    </div>
+                    <div class="card-desc">
+                        <h3 id="blog-title-three"></h3>
+                        <p id="blog-excerpt-three"></p>
+                            <a href="" id="blog-link-three" class="btn-card">Read More</a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- details card section starts from here -->
+
+
+
 <!-- Volunteer section -->
 <div id="volunteer">
 <div class="container">
         <div class="row">
             <div class="col-md-8 cta-contents">
-                <h4 class="cta-title text-center">we are currently seeking out research funding from local and international agencies</h4>
+                <h4 class="cta-title">NCEHR is volunteer led, and everyone is welcome to join us and start contributing in whatever way they can. Currently, you can start voluntering by becoming a member, donate funds for research projects or both.</h4>
                
             </div>
             <div class="col-md-2 cta-button">
-                <a href="#" class="btn btn-lg btn-block btn-primary">Volunteer!</a>
+                <a href="#" class="btn btn-lg btn-block btn-primary">Join</a>
             </div>
             <div class="col-md-2 cta-button">
-                <a href="#" class="btn btn-lg btn-block btn-primary">Donate!</a>
+                <a href="#" class="btn btn-lg btn-block btn-primary">Donate</a>
             </div>
          </div>
 </div>
@@ -342,37 +539,43 @@
         <div class="container">
             <div class="row">
                 <!-- Footer About Widget Start -->
-                <div class="col-md-8 footer-widget">
+                <div class="col-md-3 footer-widget">
                     <div class="footer-about">
                         <!-- Footer Title Start -->
                         <h4>Address</h4>
                         <!-- Footer Title End -->
-                        <p>New Pharmacy Building, Chukwuemeka Odumegwu Ojukwu University, <br> Igbariam, Anambra State, Nigeria</p>
+                        <p>New Pharmacy Building, Chukwuemeka Odumegwu Ojukwu University,
+                            Igbariam, Anambra State, Nigeria</p>
                     </div>
                 </div>
                 <!-- Footer About Widget End -->
                 <!-- Footer Subscribe Widget Start -->
-                
+                <div class="col-md-6 col-sm-12 footer-widget">
                     <!-- Footer Title Start -->
-                    <h4>Social Media Links</h4>
+                    <h4>Subscribe To Our Monthly Newsletter</h4>
                     <!-- Footer Title End -->
-
-                    <div class="col-md-2 col-sm-2">
-                        <a href="#" class="btn btn-lg btn-block kpx_btn-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
-                          <i class="fa fa-facebook fa-2x"></i>
-                          <span class="hidden-xs"></span>
-                        </a>
-                      </div>
-                      <div class="col-md-2 col-sm-2">
-                        <a href="#" class="btn btn-lg btn-block kpx_btn-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
-                          <i class="fa fa-twitter fa-2x"></i>
-                          <span class="hidden-xs"></span>
-                        </a>
-                      </div>  
-
-                   
-               
+                    <!-- Subscribe Form Start -->
+                    <form action="https://ncehr.us19.list-manage.com/subscribe/post?u=05726f80060eafb32008b2051&amp;id=9545b0ccc5" method="post" name="mc-embedded-subscribe-form" target="_blank" id="subscribeForm" novalidate="novalidate">
+                        <input type="text" name="MERGE1" placeholder="Enter your full name" class="input-box">
+                        <input type="text" name="EMAIL" placeholder="Enter your email address" class="input-box">
+                        <input type="submit" value="Subscribe" class="submit-button">
+                    </form>
+                    <!-- Subscribe Form End -->
+                </div>
                 <!-- Footer Subscribe Widget End -->
+                <!-- Footer Widget Start -->
+                <div class="col-md-3 footer-widget">
+                    <!-- Footer Title Start -->
+                    <h4>Quick Links</h4>
+                    <!-- Footer Title End -->
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/individual">Members</a></li>
+                        <li><a href="https://resources.ncehr.org">Resources</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Widget End -->
             </div>
         </div>
         <div class="contact-info">
@@ -380,18 +583,32 @@
                 <div class="row">
 
                     <!-- Contact Info Item Start -->
-                    <div class="col-md-6 col-xs-6 text-center">
+                    <div class="col-md-4 col-xs-12 text-center">
                         <i class="fa fa-envelope-o"></i>
-                        <a href="#">enquiry@ncehr.org</a>
+                        <a href="mailto:enquiry@ncehr.org">enquiry@ncehr.org</a>
+                        
                     </div>
                     <!-- Contact Info Item End -->
                     
                     <!-- Contact Info Item Start -->
-                    <div class="col-md-6 col-xs-6 text-center">
+                    <div class="col-md-4 col-xs-12 text-center">
                         <i class="fa fa-phone"></i>
-                        <a href="#">+234 810 683 4610</a>
+                        <a href="tel:+2348106834610">+234 810 683 4610</a>
                     </div>
                     <!-- Contact Info Item End -->
+
+                    <!-- Contact Info Item Start -->
+                    <div class="col-md-4 col-xs-12 text-center">
+                        <a href="https://web.facebook.com/ncehr.org" target="_blank"lass="footer-social">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                          <a href="https://twitter.com/NCEHR1" target="_blank" class="footer-social">
+                              <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                    </div>
+                    <!-- Contact Info Item End -->
+
                 </div>
             </div>
         </div>
@@ -406,7 +623,7 @@
             <p class="text-center">Copyright 2020 &copy; <a href="/">NCEHR</a>. All Rights Reserved.</p>
             </div>
             <div class="col-md-6">
-                <p class="text-center">Developed and Managed by <a href="/">Edewor Onyedika</a>.</p>
+                <p class="text-center">Developed and Managed by <a href="https://www.linkedin.com/in/edewor-onyedika-14758685/" target="_blank">Edewor Onyedika</a>.</p>
                 </div>
             
         </div>
@@ -419,11 +636,23 @@
     </div>
     <!-- Back To Top Button Start -->
 
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
     <!-- ====jQuery Library==== -->
     <script src="js/jquery-3.1.0.min.js"></script>
 
     <!-- ====jQuery UI Library==== -->
     <script src="js/jquery-ui-custom.min.js"></script>
+
+      <!-- ==== Covid-19 ==== -->
+      <script src="js/covid.js"></script>
+
+      <!-- ==== blogfecth ==== -->
+      <script src="js/blogfetch.js"></script>
 
     <!-- ====Bootstrap Library==== -->
     <script src="js/bootstrap.min.js"></script>
@@ -442,11 +671,18 @@
     
     <!-- ====jQuery UI Touch Punch Plugin==== -->
     <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="venobox/venobox.min.js"></script>
     
     <!-- ====RetinaJS Plugin==== -->
     <script src="js/retina.min.js"></script>
 
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
     <!-- ====Main Script==== -->
     <script src="js/main.js"></script>
+
+    
 </body>
 </html>

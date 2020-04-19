@@ -94,6 +94,40 @@ Author : themelooks.com
                 showBackToTopBtn();
             }
         });
+
+        $(document).ready(function(){
+            //FANCYBOX
+            //https://github.com/fancyapps/fancyBox
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+        }); 
+
+
+        // Gallery carousel (uses the Owl Carousel library)
+  $(".gallery-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    center: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      },
+      1200: {
+        items: 5
+      }
+    }
+  });
+
+  
         
         /* -------------------------------------------------------------------------*
          * FORM VALIDATION
@@ -338,34 +372,23 @@ Author : themelooks.com
         /* -------------------------------------------------------------------------*
          * MAP
          * -------------------------------------------------------------------------*/
-        var map, marker, myLatLng;
-        
-        function initMap() {
-            myLatLng = {lat: 5.76816395, lng: 6.834304875953444};
-            
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                zoom: 16,
-                scrollwheel: false,
-                disableDefaultUI: true,
-                zoomControl: true
+
+        function initialize() {
+            var map = new google.maps.Map(
+              document.getElementById('map'), {
+                center: new google.maps.LatLng(5.76816395, 6.834304875953444),
+                zoom: 13,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
             });
-            
-            marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                animation: google.maps.Animation.DROP,
-                draggable: true
+      
+            var marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(5.76816395, 6.834304875953444),
+                  map: map
             });
-            
-            if ( wn.width() < 767 ) {
-                map.setOptions({draggable: false});
-            }
-        }
-        
-        if ( $("#map").length ) {
-            initMap();
-        }
+      
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+          
         
      
         
