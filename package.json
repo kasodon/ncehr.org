@@ -27,7 +27,7 @@
     "ejs": "^3.0.1",
     "express": "^4.15.2",
     "nodemailer": "^6.4.3",
-    "nodemailer-mailgun-transport": "^2.0.0",
+    "nodemailer-mailgun-transport": "^2.1.5",
     "path": "^0.12.7"
   }
 }
